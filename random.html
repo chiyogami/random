@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to the library!</title>
+    <link rel="stylesheet" href="random.css">
+</head>
+<body>
+  <!--topの本棚の画像　電球ボタン-->
+  <div class="top">
+    <span class="gradient">
+      <img src="library-419254_1280.jpg" alt="library-419254_1280" class="book" class="gradient">
+    </span>
+    <a href="#" id="fot" class="a"><span class="light light1"></span></a>
+  </div>
+  <div class="top">
+    <span class="flaaash">
+      <img src="28433.png" alt="28433" class="pattern">
+    </span>
+    <div class="posi">
+      <!--コメント-->
+      <p class="p"> ー-ー- - ランダムに表示されます - -ー-ー </p>
+      <!--textbox ボタン-->
+      <input type="text" id="textbox1" class="textbox" value="" placeholder="-- 名詞 --">
+      <a class="copy-btn" href="#" onClick="copy()">COPY</a>
+      <a id="onebtn-square-toy" href="#" onClick="one()">●ONE●</a><br>
+
+      <input type="text" id="textbox2" class="textbox" value="" placeholder="-- 抽象 --">
+      <a class="copy-btn" href="#" onClick="copy1()">COPY</a>
+      <a id="twobtn-square-toy" href="#" onClick="two()">●TWO●</a><br>
+
+      <input type="text" id="textbox3" class="textbox" placeholder="-- 感情 --">
+      <a class="copy-btn" href="#" onClick="copy2()">COPY</a>
+      <a id="threebtn-square-toy" href="#" onClick="three()">●THREE●</a><br>
+
+      <input type="text" id="textbox4" class="textbox" placeholder="-- 柄・模様 --">
+      <a class="copy-btn" href="#" onClick="copy3()">COPY</a>
+      <a id="fourbtn-square-toy" href="#" onClick="four()">●FOUR●</a><br>
+
+      <input type="text" id="textbox5" class="textbox" placeholder="-- 色 --">
+      <a class="copy-btn" href="#" onClick="copy4()">COPY</a>
+      <a id="fivebtn-square-toy" href="#" onClick="five()">●FIVE●</a><br>
+      <input type="text" id="free" placeholder="=- - ログ - -="><br>
+      <!--コメント-->
+      <p class="p">↓　↓　↓</p>
+    </div>
+  </div>
+  <!--空白応急処置-->
+  <br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br>
+  <!--ATTENTION-->
+  <span class="neon flash" id="A">A<span>A</span></span>
+  <span class="neon flash">T<span>T</span></span>
+  <span class="neon flash" id="T">T<span>T</span></span>
+  <span class="neon flash" id="E">E<span>E</span></span>
+  <span class="neon flash" id="N">N<span>N</span></span>
+  <span class="neon flash" id="T2">T<span>T</span></span>
+  <span class="neon flash" id="I">I<span>I</span></span>
+  <span class="neon flash" id="O">O<span>O</span></span>
+  <span class="neon flash" id="N2">N<span>N</span></span>
+  <!--box　説明文-->
+  <div class="box" id="flash">
+    <p><br>
+      ・<span class="marker-red"> 赤色のボタン </span>は、<span class="marker-red"> 名詞 </span>がでます。 <br>
+      ＜<span class="marker-red"> 例 </span>＞ 林檎、星、お菓子 <br>
+      <br>
+      ・<span class="marker-pink"> ピンク色のボタン </span>は、<span class="marker-pink"> 抽象的な言葉 </span>がでます。 <br>
+      ＜<span class="marker-pink"> 例 </span>＞ 平和、正義、愛 <br>
+      <br>
+      ・<span class="marker-blue"> 水色のボタン </span> は、<span class="marker-blue"> 感情を表す言葉 </span>がでます。 <br>
+      ＜<span class="marker-blue"> 例 </span>＞ 幸せ、尊敬、憂鬱 <br>
+      <br>
+      ・<span class="marker-yellow"> 黄色のボタン </span>は、<span class="marker-yellow"> 柄・模様 </span>がでます。 <br>
+      ＜<span class="marker-yellow"> 例 </span>＞ 水玉、市松模様、ストライプ<br>
+      <br>
+      ・<span class="marker-white"> 白色のボタン </span> は、<span class="marker-white"> 色 </span>がでます。 <br>
+      ＜<span class="marker-white"> 例 </span>＞ 赤、オレンジ、水色 <br>
+      <br>
+      ・『 COPY 』ボタンを押すと、 <br>
+      　コピーすることができます。 <br>
+       <br>
+      　　　　　電球マークのボタンを押すと...
+    </p>
+  </div>
+  <script src="random.js"></script>
+</body>
+</html>
