@@ -1,0 +1,501 @@
+body {
+  background-color: #231815;
+  text-align: center;
+  background-image: url("abstract-3592117_1280.jpg");
+  background-repeat: no-repeat;
+  background: repeating-linear-gradient( rgba(35, 24, 21, 1), rgba(35, 24, 21, 1), rgba(18, 12, 33, 0.8), rgba(0, 0, 40, 0.4)),
+  url("abstract-3592117_1280.jpg");
+  background-size: cover;
+  margin: auto;
+}
+
+.fnt1{
+  font-family: 'American Typewriter',sans-serif;
+  pointer-events: none;
+}
+.fnt {
+  font-family: 'Chalkduster',sans-serif;
+}
+
+/*top 画像*/
+img.book {
+  width: 100%;
+  height: 150px;
+  object-fit: cover; 
+}
+
+img.pattern {
+  position: absolute;
+  width: 100vw;
+  height: 480px;
+  margin: 0 -10px;
+  padding: 0 8.5px;
+  opacity: 0.45;
+  top: 160px;
+}
+.flaaash {
+  -webkit-animation: flash-animetion 5s ease-in-out infinite alternate;
+  -moz-animation: flash-animetion 5s ease-in-out infinite alternate;
+  animation: flash-animetion 5s ease-in-out infinite alternate;
+}
+@-webkit-keyframes blink{
+  0% {opacity:1;}
+  34% {opacity: 1;}
+  35% {opacity: 0.5;}
+  36% {opacity: 1;}
+  48% {opacity: 1;}
+  49% {opacity: 0.5;}
+  50% {opacity: 1;}
+  86% {opacity: 1;}
+  87% {opacity: 0.3;}
+  88% {opacity: 1;}
+  89% {opacity: 0.5;}
+  90% {opacity: 1;}
+}
+@-moz-keyframes blink{  
+  0% {opacity:1;}
+  34% {opacity: 1;}
+  35% {opacity: 0.5;}
+  36% {opacity: 1;}
+  48% {opacity: 1;}
+  49% {opacity: 0.5;}
+  50% {opacity: 1;}
+  86% {opacity: 1;}
+  87% {opacity: 0.3;}
+  88% {opacity: 1;}
+  89% {opacity: 0.5;}
+  90% {opacity: 1;}
+}
+@keyframes blink{
+  0% {opacity:1;}
+  34% {opacity: 1;}
+  35% {opacity: 0.5;}
+  36% {opacity: 1;}
+  48% {opacity: 1;}
+  49% {opacity: 0.5;}
+  50% {opacity: 1;}
+  86% {opacity: 1;}
+  87% {opacity: 0.3;}
+  88% {opacity: 1;}
+  89% {opacity: 0.5;}
+  90% {opacity: 1;}
+}
+
+.posi {
+  position: absolute;
+  width: 100vw;
+  top: 160px;
+  right: auto;
+  left: auto;
+}
+
+/*電球ボタン*/
+.light{
+  display:inline-block; 
+  position:relative;
+  background-color: transparent;
+  border: solid 1px #fffded;
+  border-radius:90px;
+  width:60px;
+  height:60px;
+  margin:5px;
+  box-shadow: 0px 0px 5px #fffded, 0px 0px 5px #fffded inset;
+}
+/*ライト部分*/
+.light1:before{
+  content:''; 
+  display:block; 
+  position:absolute; 
+  top:9px; 
+  left:15px; 
+  border-radius:30px;
+  height:30px; 
+  width:30px; 
+  background-color:#fffded;
+  box-shadow: 0px 0px 10px #fffded;
+  animation: flash-animetion 5s linear infinite;
+}
+/*ライト部分 flash animetion*/
+.flash-animetion {
+  animation: flash-animation 5s linear infinite;
+}
+@keyframes flash-animetion {
+  0% {opacity: 1;}
+  20% {opacity: 1;}
+  21% {opacity: 0.6;}
+  22% {opacity: 1;}
+  88% {opacity: 1;}
+  89% {opacity: 0.4;}
+  90% {opacity: 1;}
+  91% {opacity: 0.5;}
+  92% {opacity: 1;}
+}
+/*電球 下部分*/
+.light1:after{
+  content:''; 
+  display:block; 
+  position:absolute; 
+  top:42px; 
+  left:23px; 
+  height:2px; 
+  width:15px;
+  border-top:4px solid #fffded;
+  border-bottom:4px solid #fffded;
+}
+
+/*top 設定*/
+.top {
+  position: absolute;
+  margin: auto;
+}
+.a {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/*グラデーションを掛けたい <img> を囲う外枠*/
+.gradient{
+  position: relative;
+  display: block;
+}
+.gradient:after{
+  content: "";
+  position: absolute; left: 0px; top: 0px;
+  display: block;
+  background: -moz-linear-gradient(top, transparent, transparent, #231815 );
+  background: -webkit-linear-gradient(top, transparent, transparent, #231815 );
+  background: repeating-linear-gradient( top, transparent, transparent, #231815 );
+}
+/* 縦横を外枠に合わせる */
+.gradient img, .gradient:after{
+  width: 100%;
+  height: 150px;
+}
+
+.p {
+  margin: 20px;
+  font-weight: bold;
+  font-family: 'TsukuBRdGothic-Regular',sans-serif;
+  color: #fffded;
+  text-shadow: 0px 0px 3px #fffded;
+}
+
+/*textbox*/
+.textbox {
+  padding: 0.5em 1em;
+  margin: 1.01em 0;
+  width: 270px;
+  height: 20px;
+  font-weight: bold;
+  font-family: 'TsukuBRdGothic-Regular',sans-serif;
+  color: #fffded;
+  text-align: center;
+  border: solid 1px #fffded;
+  border-radius: 1ex;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: transparent;
+  box-shadow: 0px 0px 5px #fffded, 0px 0px 5px #fffded inset;
+  text-shadow: 0px 0px 3px #fffded;
+  outline: 0;
+}
+input::placeholder {
+  color: #fffded;
+  opacity: 0.65;
+}
+
+/*コピーボタン*/
+.copy-btn {
+  display: inline-block;
+  width: 60px;
+  height: 20px;
+  padding: 0.5em 0;
+  font-weight: bold;
+  font-family: 'TsukuBRdGothic-Regular',sans-serif;
+  font-size: 14px;
+  color: #fffded;
+  text-align: center;
+  text-decoration: none;
+  border: solid 1px #fffded;
+  border-radius: 1ex;
+  margin-top: 1ex;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: transparent;
+  box-shadow: 0px 0px 5px #fffded, 0px 0px 5px #fffded inset;
+  text-shadow: 0px 0px 3px #fffded;
+  outline: 0;
+}
+
+#free {
+  display: inline-block;
+  width: 490px;
+  height: 20px;
+  padding: 0.5em 0;
+  font-weight: bold;
+  font-family: 'TsukuBRdGothic-Regular',sans-serif;
+  font-size: 14px;
+  color: #fffded;
+  text-align: center;
+  text-decoration: none;
+  border: solid 1px #fffded;
+  border-radius: 1ex;
+  margin-top: 2ex;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: transparent;
+  box-shadow: 0px 0px 5px #fffded, 0px 0px 5px #fffded inset;
+  text-shadow: 0px 0px 3px #fffded;
+  outline: 0;
+}
+
+/*ボタン 赤*/
+#onebtn-square-toy {
+  position: relative;
+  display: inline-block;
+  padding: 0.25em 0.5em;
+  text-decoration: none;
+  background: #802a31;/*背景色*/
+  color: #802a31;/*=背景色*/
+  box-shadow: inset 0 2px 0 rgba(255,255,255,0.2);
+  border-bottom: solid 2px #612428;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 18px;
+  text-shadow: -1px -1px rgba(255, 255, 255, 0.44), 1px 1px rgba(0, 0, 0, 0.38);
+  width: 100px;
+  height: 30px;
+  margin: 0px;
+  padding-top: 10px;
+} 
+#onebtn-square-toy:active {
+  /*押したとき*/
+  border-bottom: solid 2px #802a31;
+  box-shadow: none;
+  text-shadow: -1px -1px rgba(255, 255, 255, 0.3), 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+/*ボタン ピンク*/
+#twobtn-square-toy {
+  position: relative;
+  display: inline-block;
+  padding: 0.25em 0.5em;
+  text-decoration: none;
+  background: #9d4b46;/*背景色*/
+  color: #9d4b46;/*=背景色*/
+  box-shadow: inset 0 2px 0 rgba(255,255,255,0.2);
+  border-bottom: solid 2px #743a36;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 18px;
+  text-shadow: -1px -1px rgba(255, 255, 255, 0.44), 1px 1px rgba(0, 0, 0, 0.38);
+  width: 100px;
+  height: 30px;
+  margin: 0px;
+  padding-top: 10px;
+} 
+#twobtn-square-toy:active {
+  /*押したとき*/
+  border-bottom: solid 2px #9d4b46;
+  box-shadow: none;
+  text-shadow: -1px -1px rgba(255, 255, 255, 0.3), 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+/*ボタン 黄色*/
+#threebtn-square-toy {
+  position: relative;
+  display: inline-block;
+  padding: 0.25em 0.5em;
+  text-decoration: none;
+  background: #a78d4a;/*背景色*/
+  color: #a78d4a;/*=背景色*/
+  box-shadow: inset 0 2px 0 rgba(255,255,255,0.2);
+  border-bottom: solid 2px #7a6538;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 18px;
+  text-shadow: -1px -1px rgba(255, 255, 255, 0.44), 1px 1px rgba(0, 0, 0, 0.38);
+  width: 100px;
+  height: 30px;
+  margin: 0px;
+  padding-top: 10px;
+}  
+#threebtn-square-toy:active {
+  /*押したとき*/
+  border-bottom: solid 2px #a78d4a;
+  box-shadow: none;
+  text-shadow: -1px -1px rgba(255, 255, 255, 0.3), 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+/*ボタン 水色*/
+#fourbtn-square-toy {
+  position: relative;
+  display: inline-block;
+  padding: 0.25em 0.5em;
+  text-decoration: none;
+  background: #71918f;/*背景色*/
+  color: #71918f;/*=背景色*/
+  box-shadow: inset 0 2px 0 rgba(255,255,255,0.2);
+  border-bottom: solid 2px #576866;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 18px;
+  text-shadow: -1px -1px rgba(255, 255, 255, 0.44), 1px 1px rgba(0, 0, 0, 0.38);
+  width: 100px;
+  height: 30px;
+  margin: 0px;
+  padding-top: 10px;
+}   
+#fourbtn-square-toy:active {
+  /*押したとき*/
+  border-bottom: solid 2px #71918f;
+  box-shadow: none;
+  text-shadow: -1px -1px rgba(255, 255, 255, 0.3), 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+/*ボタン 白*/
+#fivebtn-square-toy {
+  position: relative;
+  display: inline-block;
+  padding: 0.25em 0.5em;
+  text-decoration: none;
+  background: #ada490;/*背景色*/
+  color: #ada490;/*=背景色*/
+  box-shadow: inset 0 2px 0 rgba(255,255,255,0.2);
+  border-bottom: solid 2px #7f7567;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 18px;
+  text-shadow: -1px -1px rgba(255, 255, 255, 0.44), 1px 1px rgba(0, 0, 0, 0.38);
+  width: 100px;
+  height: 30px;
+  margin: 0px;
+  padding-top: 10px;
+}   
+#fivebtn-square-toy:active {
+  /*押したとき*/
+  border-bottom: solid 2px #ada490;
+  box-shadow: none;
+  text-shadow: -1px -1px rgba(255, 255, 255, 0.3), 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+/*ATTENTION*/
+#A {
+  font-family: PHOSPHATE;
+}
+#T {
+  font-family: PHOSPHATE;
+}
+#E {
+  -webkit-text-stroke: 2px #fef8f0;
+  text-shadow: 0 0 50px #e16c70;
+}
+#N {
+  font-family:PHOSPHATE;
+  -webkit-text-stroke: 2px #fef6f1;
+  text-shadow: 0 0 50px #e29562;
+}
+#T2 {
+  -webkit-text-stroke: 2px #fffbee;
+  text-shadow: 0 0 50px #e3ba56;
+}
+#I {
+  font-family: PHOSPHATE;
+  -webkit-text-stroke: 2px #fffded;
+  text-shadow: 0 0 50px #e4e647;
+}
+#O {
+  -webkit-text-stroke: 2px #fffded;
+  text-shadow: 0 0 50px #e4e647;
+}
+#N2 {
+  font-family: PHOSPHATE;
+  -webkit-text-stroke: 2px #fffded;
+  text-shadow: 0 0 50px #e4e647;
+}
+/*ATTENTION neon/flash animetion*/
+.neon {
+  position: relative;
+  display: inline-block;
+  color: transparent;
+  font-family: PHOSPHATE-SOLID;
+  font-size: 350%;
+  -webkit-text-stroke: 2px #fceef4;
+  text-shadow: 0 0 50px #e0437d;
+  margin-top: 80px;
+}
+.neon span {
+  position: absolute;
+  top: 4%;
+  left: 8%;
+  opacity: .3;
+}
+.flash {
+  animation: flash-anime 5s linear infinite;
+}
+@keyframes flash-anime {
+  0%   {opacity: 1;}
+  20%  {opacity: 1;}
+  21%  {opacity: 0.3;}
+  22%  {opacity: 1;}
+  75% {opacity: 1;}
+  76% {opacity: 0.6;}
+  77% {opacity: 1;}
+  78% {opacity: 0.3;}
+  79% {opacity: 1;}
+}
+
+/*boxとbox中身*/
+.box {
+  padding: 0.5em 1em;
+  margin: 1em 0;
+  font-weight: bold;
+  border: solid 1px #fffded;
+  border-radius: 1ex;
+  height: 495px;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0px 0px 5px #fffded, 0px 0px 5px #fffded inset;
+}
+.box p {
+  margin: 0;
+  padding: 0;
+  color: #fffded;
+  text-shadow: 0 0 25px #fffded;
+  text-align: start;
+}
+/*マーカー*/
+.marker-red {
+  background: linear-gradient(transparent 40%,#9f303b 40%);
+}
+.marker-pink {
+  background: linear-gradient(transparent 40%,#c65c57 40%);
+}
+.marker-blue {
+  background: linear-gradient(transparent 40%, #8cbab8 40%);
+}
+.marker-yellow {
+  background: linear-gradient(transparent 40%, #cab98a 40%);
+}
+.marker-white {
+  background: linear-gradient(transparent 40%, #9d899d 40%);
+}
+/*box flash animation*/
+#flash {
+  animation: flash 5s linear infinite;
+}
+@keyframes flash {
+  0% {opacity: 1;}
+  45% {opacity: 1;}
+  46% {opacity: 0.4;}
+  47% {opacity: 1;}
+  61% {opacity: 1;}
+  62% {opacity: 0.3;}
+  63% {opacity: 1;}
+  64% {opacity: 0.5;}
+  65% {opacity: 1;}
+  66% {opacity: 0.3;}
+  67% {opacity: 1;}
+}
